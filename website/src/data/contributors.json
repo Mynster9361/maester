@@ -645,7 +645,7 @@
         "ORCA.244"
       ],
       "initials": "TS",
-      "recentCommits": 1
+      "recentCommits": 2
     },
     {
       "id": "Mynster9361",
@@ -1281,7 +1281,7 @@
         "ORCA.244"
       ],
       "initials": "SE",
-      "recentCommits": 6
+      "recentCommits": 4
     },
     {
       "id": "oed-metzb",
@@ -1853,108 +1853,6 @@
       "recentCommits": 0
     },
     {
-      "id": "weyCC81",
-      "github": "weyCC81",
-      "name": "Stefan Wey",
-      "title": "➔ _ Microsoft 365 _ | _ MCT (Trainer) _ , _ 🪪 Identity (Entra),✉ Mail (Exchange), 👥Collaboration (",
-      "mvp": false,
-      "mvpUrl": "",
-      "pinLast": false,
-      "company": "",
-      "location": "Switzerland",
-      "locationFlag": "🇨🇭",
-      "url": "https://www.alweys.ch",
-      "socials": {
-        "linkedin": "stefanwey",
-        "bluesky": "stefanwey.bsky.social"
-      },
-      "avatar": "https://github.com/weyCC81.png",
-      "firstContribution": "2024-11-04",
-      "testsAuthored": [],
-      "testsContributed": [
-        "CIS.M365.2.1.1",
-        "CIS.M365.2.1.4",
-        "CIS.M365.2.1.5",
-        "CISA.MS.AAD.1.1",
-        "CISA.MS.AAD.2.1",
-        "CISA.MS.AAD.2.3",
-        "CISA.MS.AAD.3.1",
-        "CISA.MS.AAD.3.2",
-        "CISA.MS.AAD.3.6",
-        "CISA.MS.AAD.3.7",
-        "CISA.MS.AAD.3.8",
-        "CISA.MS.AAD.5.4",
-        "CISA.MS.EXO.2.1",
-        "CISA.MS.EXO.2.2",
-        "CISA.MS.EXO.6.2",
-        "CISA.MS.EXO.7.1",
-        "EIDSCA.AF01",
-        "EIDSCA.AF02",
-        "EIDSCA.AF03",
-        "EIDSCA.AF04",
-        "EIDSCA.AF05",
-        "EIDSCA.AF06",
-        "EIDSCA.AG01",
-        "EIDSCA.AG02",
-        "EIDSCA.AG03",
-        "EIDSCA.AM01",
-        "EIDSCA.AM02",
-        "EIDSCA.AM03",
-        "EIDSCA.AM04",
-        "EIDSCA.AM06",
-        "EIDSCA.AM07",
-        "EIDSCA.AM09",
-        "EIDSCA.AM10",
-        "EIDSCA.AP01",
-        "EIDSCA.AP04",
-        "EIDSCA.AP05",
-        "EIDSCA.AP06",
-        "EIDSCA.AP07",
-        "EIDSCA.AP08",
-        "EIDSCA.AP09",
-        "EIDSCA.AP10",
-        "EIDSCA.AP14",
-        "EIDSCA.AS04",
-        "EIDSCA.AT01",
-        "EIDSCA.AT02",
-        "EIDSCA.AV01",
-        "EIDSCA.CP01",
-        "EIDSCA.CP03",
-        "EIDSCA.CP04",
-        "EIDSCA.CR01",
-        "EIDSCA.CR02",
-        "EIDSCA.CR03",
-        "EIDSCA.CR04",
-        "EIDSCA.PR01",
-        "EIDSCA.PR02",
-        "EIDSCA.PR03",
-        "EIDSCA.PR05",
-        "EIDSCA.PR06",
-        "EIDSCA.ST08",
-        "EIDSCA.ST09",
-        "MT.1001",
-        "MT.1003",
-        "MT.1004",
-        "MT.1005",
-        "MT.1008",
-        "MT.1010",
-        "MT.1016",
-        "MT.1020",
-        "MT.1021",
-        "MT.1024",
-        "MT.1035",
-        "MT.1036",
-        "MT.1038",
-        "MT.1042",
-        "MT.1045",
-        "MT.1046",
-        "MT.1047",
-        "MT.1048"
-      ],
-      "initials": "SW",
-      "recentCommits": 1
-    },
-    {
       "id": "nicowyss",
       "github": "nicowyss",
       "name": "nicowyss",
@@ -2414,9 +2312,35 @@
       ],
       "testsContributed": [
         "CIS.M365.1.3.1",
-        "CISA.MS.AAD.2.2"
+        "CISA.MS.AAD.2.2",
+        "MT.1020"
       ],
       "initials": "M",
+      "recentCommits": 4
+    },
+    {
+      "id": "agnivesh",
+      "github": "agnivesh",
+      "name": "Agnivesh S.",
+      "title": "",
+      "mvp": false,
+      "mvpUrl": "",
+      "pinLast": false,
+      "company": "",
+      "location": "United Kingdom",
+      "locationFlag": "🇬🇧",
+      "url": "",
+      "socials": {
+        "linkedin": "agniveshs"
+      },
+      "avatar": "https://github.com/agnivesh.png",
+      "firstContribution": "2026-08-16",
+      "testsAuthored": [
+        "MT.1196",
+        "MT.1197"
+      ],
+      "testsContributed": [],
+      "initials": "AS",
       "recentCommits": 2
     },
     {
@@ -2681,6 +2605,30 @@
       ],
       "initials": "PM",
       "recentCommits": 0
+    },
+    {
+      "id": "SebastianClaesson",
+      "github": "SebastianClaesson",
+      "name": "Sebastian Claesson",
+      "title": "",
+      "mvp": false,
+      "mvpUrl": "",
+      "pinLast": false,
+      "company": "",
+      "location": "",
+      "locationFlag": "",
+      "url": "",
+      "socials": {},
+      "avatar": "https://github.com/SebastianClaesson.png",
+      "firstContribution": "2026-08-13",
+      "testsAuthored": [],
+      "testsContributed": [
+        "MT.1034",
+        "MT.1050",
+        "MT.1051"
+      ],
+      "initials": "SC",
+      "recentCommits": 2
     },
     {
       "id": "Oppedijk",
@@ -3192,7 +3140,7 @@
         "MT.1066"
       ],
       "initials": "S",
-      "recentCommits": 1
+      "recentCommits": 0
     },
     {
       "id": "merill",
@@ -5248,7 +5196,8 @@
         "SamErde",
         "Mynster9361",
         "Jhope188",
-        "BuckeyeGuyJFlo"
+        "BuckeyeGuyJFlo",
+        "blindzero"
       ]
     },
     "MT.1021": {
@@ -5410,7 +5359,8 @@
         "milanschwartz",
         "jasperbaes",
         "SamErde",
-        "BuckeyeGuyJFlo"
+        "BuckeyeGuyJFlo",
+        "SebastianClaesson"
       ]
     },
     "MT.1035": {
@@ -5545,7 +5495,8 @@
       "contributors": [
         "merill",
         "SamErde",
-        "BuckeyeGuyJFlo"
+        "BuckeyeGuyJFlo",
+        "SebastianClaesson"
       ]
     },
     "MT.1051": {
@@ -5553,7 +5504,8 @@
       "contributors": [
         "merill",
         "SamErde",
-        "BuckeyeGuyJFlo"
+        "BuckeyeGuyJFlo",
+        "SebastianClaesson"
       ]
     },
     "MT.1052": {
@@ -6295,6 +6247,14 @@
         "merill",
         "BuckeyeGuyJFlo"
       ]
+    },
+    "MT.1196": {
+      "author": "agnivesh",
+      "contributors": []
+    },
+    "MT.1197": {
+      "author": "agnivesh",
+      "contributors": []
     },
     "ORCA.100": {
       "author": "soulemike",
@@ -8270,6 +8230,14 @@
     "MT.1195": {
       "title": "The Quick Access app should not be subject to a sign-in frequency Conditional Access control",
       "path": "/docs/tests/MT.1195"
+    },
+    "MT.1196": {
+      "title": "Review who can change attributes used by dynamic group rules",
+      "path": "/docs/next/tests/MT.1196"
+    },
+    "MT.1197": {
+      "title": "Dynamic groups should not use the retiring memberOf rule operator",
+      "path": "/docs/next/tests/MT.1197"
     },
     "ORCA.100": {
       "title": "Bulk Complaint Level threshold is between 4 and 6.",
