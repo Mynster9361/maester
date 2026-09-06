@@ -13,7 +13,7 @@ keywords:
   - "CIS"
   - "CIS E5 Level 1"
   - "CIS E5"
-  - "CIS M365 v6.0.1"
+  - "CIS M365 v7.0.0"
   - "L1"
 ---
 
@@ -109,7 +109,7 @@ New-AntiPhishRule -Name $params.Name -AntiPhishPolicy $params.Name -RecipientDom
 * [Microsoft 365 Defender](https://security.microsoft.com)
 * [Anti-phishing protection in cloud organizations](https://learn.microsoft.com/defender-office-365/anti-phishing-protection-about)
 * [Configure anti-phishing policies for all cloud mailboxes](https://learn.microsoft.com/defender-office-365/anti-phishing-policies-eop-configure)
-* [CIS Microsoft 365 Foundations Benchmark v6.0.1 - Page 94](https://www.cisecurity.org/benchmark/microsoft_365)
+* [CIS Microsoft 365 Foundations Benchmark v7.0.0 - Page 102](https://www.cisecurity.org/benchmark/microsoft_365)
 
 ## Test Metadata
 
@@ -120,7 +120,45 @@ New-AntiPhishRule -Name $params.Name -AntiPhishPolicy $params.Name -RecipientDom
 | Suite | CIS |
 | Category | CIS E5 Level 1 |
 | PowerShell test | [Test-MtCisSafeAntiPhishingPolicy](/docs/commands/Test-MtCisSafeAntiPhishingPolicy) |
-| Tags | CIS, CIS E5, CIS E5 Level 1, CIS M365 v6.0.1, CIS.M365.2.1.7, L1 |
+| Tags | CIS, CIS E5, CIS E5 Level 1, CIS M365 v7.0.0, CIS.M365.2.1.7, L1 |
+
+## Remediation
+
+1. Navigate to [Microsoft 365 Defender](https://security.microsoft.com)
+2. Click to expand **Email & collaboration** select **Policies & rules**
+3. Select **Threat policies**.
+4. Under Policies select **Anti-phishing** and click **Create**.
+5. Name the policy, continuing and clicking **Next** as needed:
+
+* Add **Groups** and/or **Domains** that contain a majority of the organization.
+* Set **Phishing email threshold** to **3 - More Aggressive**
+* Check **Enable users to protect** and add up to 350 users.
+* Check **Enable domains to protect** and check **Include domains I own**.
+* Check **Enable mailbox intelligence (Recommended)**.
+* Check **Enable Intelligence for impersonation protection (Recommended)**.
+* Check **Enable spoof intelligence (Recommended)**.
+
+1. Under Actions configure the following:
+
+* Set **If a message is detected as user impersonation to Quarantine the message**.
+* Set **If a message is detected as domain impersonation to Quarantine the message**.
+* Set **If Mailbox Intelligence detects an impersonated user to Quarantine the message**.
+* Leave **Honor DMARC record policy when the message is detected as spoof** checked.
+* Check **Show first contact safety tip (Recommended)**.
+* Check **Show user impersonation safety tip**.
+* Check **Show domain impersonation safety tip**.
+* Check **Show user impersonation unusual characters safety tip**.
+
+1. Finally click **Next** and **Submit** the policy.
+
+>Note: DefaultFullAccessWithNotificationPolicy is suggested but not required. Users will be notified that impersonation emails are in the Quarantine
+
+## Related Links
+
+* [Microsoft 365 Defender](https://security.microsoft.com)
+* [Anti-phishing protection in cloud organizations](https://learn.microsoft.com/defender-office-365/anti-phishing-protection-about)
+* [Configure anti-phishing policies for all cloud mailboxes](https://learn.microsoft.com/defender-office-365/anti-phishing-policies-eop-configure)
+* [CIS Microsoft 365 Foundations Benchmark v7.0.0 - Page 102](https://www.cisecurity.org/benchmark/microsoft_365)
 
 ## Source
 

@@ -15,7 +15,7 @@ keywords:
   - "CIS E3"
   - "CIS E5"
   - "CIS E5 Level 1"
-  - "CIS M365 v6.0.1"
+  - "CIS M365 v7.0.0"
   - "L1"
   - "Security"
 ---
@@ -81,7 +81,7 @@ Update-MgPolicyAuthenticationMethodPolicy -AuthenticationMethodConfigurations $p
 * [Manage authentication methods for Microsoft Entra ID](https://learn.microsoft.com/entra/identity/authentication/concept-authentication-methods-manage)
 * [Context and problem](https://learn.microsoft.com/security/zero-trust/sfi/phishing-resistant-mfa#context-and-problem)
 * [What is SIM swapping & how does the hijacking scam work?](https://www.microsoft.com/microsoft-365-life-hacks/privacy-and-safety/what-is-sim-swapping)
-* [CIS Microsoft 365 Foundations Benchmark v6.0.1 - Page 288](https://www.cisecurity.org/benchmark/microsoft_365)
+* [CIS Microsoft 365 Foundations Benchmark v7.0.0 - Page 363](https://www.cisecurity.org/benchmark/microsoft_365)
 
 ## Test Metadata
 
@@ -92,7 +92,28 @@ Update-MgPolicyAuthenticationMethodPolicy -AuthenticationMethodConfigurations $p
 | Suite | CIS |
 | Category | CIS E3 Level 1 |
 | PowerShell test | [Test-MtCisWeakAuthenticationMethodsDisabled](/docs/commands/Test-MtCisWeakAuthenticationMethodsDisabled) |
-| Tags | CIS, CIS E3, CIS E3 Level 1, CIS E5, CIS E5 Level 1, CIS M365 v6.0.1, CIS.M365.5.2.3.5, L1, Security |
+| Tags | CIS, CIS E3, CIS E3 Level 1, CIS E5, CIS E5 Level 1, CIS M365 v7.0.0, CIS.M365.5.2.3.5, L1, Security |
+
+## Remediation
+
+1. Navigate to [Microsoft Entra admin center](https://entra.microsoft.com).
+2. Click to expand **Entra ID** > **Authentication methods**
+3. Select **Policies**.
+4. Inspect each method that is out of compliance and remediate:
+
+* Click on the method to open it.
+* Change the **Enable** toggle to the off position.
+* Click **Save**.
+
+>Note: If the save button remains greyed out after toggling a method off, then first turn it back on and then change the position of the Target selection (all users or select groups). Turn the method off again and save. This was observed to be a bug in the UI at the time this document was published.
+
+## Related Links
+
+* [Microsoft Entra admin center](https://entra.microsoft.com)
+* [Manage authentication methods for Microsoft Entra ID](https://learn.microsoft.com/entra/identity/authentication/concept-authentication-methods-manage)
+* [Context and problem](https://learn.microsoft.com/security/zero-trust/sfi/phishing-resistant-mfa#context-and-problem)
+* [What is SIM swapping & how does the hijacking scam work?](https://www.microsoft.com/microsoft-365-life-hacks/privacy-and-safety/what-is-sim-swapping)
+* [CIS Microsoft 365 Foundations Benchmark v7.0.0 - Page 363](https://www.cisecurity.org/benchmark/microsoft_365)
 
 ## Source
 

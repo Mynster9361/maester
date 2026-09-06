@@ -15,7 +15,7 @@ keywords:
   - "CIS E3"
   - "CIS E5"
   - "CIS E5 Level 2"
-  - "CIS M365 v6.0.1"
+  - "CIS M365 v7.0.0"
   - "L2"
   - "Security"
 ---
@@ -52,7 +52,7 @@ If user consent is disabled, previous consent grants will still be honored but a
 
 * [Microsoft 365 Entra admin center](https://entra.microsoft.com)
 * [Configure how users consent to applications](https://learn.microsoft.com/entra/identity/enterprise-apps/configure-user-consent?pivots=portal)
-* [CIS Microsoft 365 Foundations Benchmark v6.0.1 - Page 211](https://www.cisecurity.org/benchmark/microsoft_365)
+* [CIS Microsoft 365 Foundations Benchmark v7.0.0 - Page 239](https://www.cisecurity.org/benchmark/microsoft_365)
 
 ## Test Metadata
 
@@ -63,7 +63,21 @@ If user consent is disabled, previous consent grants will still be honored but a
 | Suite | CIS |
 | Category | CIS E3 Level 2 |
 | PowerShell test | [Test-MtCisEnsureUserConsentToAppsDisallowed](/docs/commands/Test-MtCisEnsureUserConsentToAppsDisallowed) |
-| Tags | CIS, CIS E3, CIS E3 Level 2, CIS E5, CIS E5 Level 2, CIS M365 v6.0.1, CIS.M365.5.1.5.1, L2, Security |
+| Tags | CIS, CIS E3, CIS E3 Level 2, CIS E5, CIS E5 Level 2, CIS M365 v7.0.0, CIS.M365.5.1.5.1, L2, Security |
+
+## Remediation
+
+1. Navigate to [Microsoft 365 Entra admin center](https://entra.microsoft.com).
+2. Click to expand **Entra ID** and select **Enterprise apps**.
+3. Under **Security** select **Consent and permissions** > **User consent settings**.
+4. Under **User consent for applications** select **Do not allow user consent**.
+5. Click the **Save** option at the top of the window.
+
+## Related Links
+
+* [Microsoft 365 Entra admin center](https://entra.microsoft.com)
+* [Configure how users consent to applications](https://learn.microsoft.com/entra/identity/enterprise-apps/configure-user-consent?pivots=portal)
+* [CIS Microsoft 365 Foundations Benchmark v7.0.0 - Page 239](https://www.cisecurity.org/benchmark/microsoft_365)
 
 ## Source
 

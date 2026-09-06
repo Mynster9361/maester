@@ -11,7 +11,7 @@ keywords:
   - "CIS.M365.8.2.3"
   - "Unknown"
   - "CIS"
-  - "CIS M365 v6.0.1"
+  - "CIS M365 v7.0.0"
   - "CIS E3 Level 1"
 ---
 
@@ -78,7 +78,7 @@ Set-CsExternalAccessPolicy -Identity Global -EnableTeamsConsumerInbound $false
 * [IT Admins - Manage external meetings and chat with people and organizations using Microsoft identities](https://learn.microsoft.com/microsoftteams/trusted-organizations-external-meetings-chat?tabs=organization-settings)
 * [Midnight Blizzard conducts targeted social engineering over Microsoft Teams](https://www.microsoft.com/security/blog/2023/08/02/midnight-blizzard-conducts-targeted-social-engineering-over-microsoft-teams/)
 * [GIFShell Attack Lets Hackers Create Reverse Shell through Microsoft Teams GIFs](https://www.bitdefender.com/en-us/blog/hotforsecurity/gifshell-attack-lets-hackers-create-reverse-shell-through-microsoft-teams-gifs)
-* [CIS Microsoft 365 Foundations Benchmark v6.0.1 - Page 416](https://www.cisecurity.org/benchmark/microsoft_365)
+* [CIS Microsoft 365 Foundations Benchmark v7.0.0 - Page 516](https://www.cisecurity.org/benchmark/microsoft_365)
 
 ## Test Metadata
 
@@ -87,9 +87,31 @@ Set-CsExternalAccessPolicy -Identity Global -EnableTeamsConsumerInbound $false
 | Test ID | CIS.M365.8.2.3 |
 | Severity | Unknown |
 | Suite | CIS |
-| Category | CIS M365 v6.0.1 |
+| Category | CIS M365 v7.0.0 |
 | PowerShell test | [Test-MtCisCommunicateInitiateExternalTeamsUsers](/docs/commands/Test-MtCisCommunicateInitiateExternalTeamsUsers) |
-| Tags | CIS, CIS E3 Level 1, CIS M365 v6.0.1, CIS.M365.8.2.3 |
+| Tags | CIS, CIS E3 Level 1, CIS M365 v7.0.0, CIS.M365.8.2.3 |
+
+## Remediation
+
+To remediate using the UI:
+
+1. Navigate to [Microsoft 365 Teams Admin Center](https://admin.teams.microsoft.com).
+2. Click to expand **Users** select **External access**.
+3. Select the **Policies** tab
+4. Click on the **Global (Org-wide default)** policy.
+5. Locate the parent setting **People in my organization can communicate with unmanaged Teams accounts**.
+6. Uncheck **External users with Teams accounts not managed by an organization can contact users in my organization**.
+7. Click **Save**.
+
+>Note: If People in my organization can communicate with unmanaged Teams accounts is already set to Off then this setting will not be visible and will satisfy the requirements of this recommendation.
+
+## Related Links
+
+* [Microsoft 365 Teams Admin Center](https://admin.teams.microsoft.com)
+* [IT Admins - Manage external meetings and chat with people and organizations using Microsoft identities](https://learn.microsoft.com/microsoftteams/trusted-organizations-external-meetings-chat?tabs=organization-settings)
+* [Midnight Blizzard conducts targeted social engineering over Microsoft Teams](https://www.microsoft.com/security/blog/2023/08/02/midnight-blizzard-conducts-targeted-social-engineering-over-microsoft-teams/)
+* [GIFShell Attack Lets Hackers Create Reverse Shell through Microsoft Teams GIFs](https://www.bitdefender.com/en-us/blog/hotforsecurity/gifshell-attack-lets-hackers-create-reverse-shell-through-microsoft-teams-gifs)
+* [CIS Microsoft 365 Foundations Benchmark v7.0.0 - Page 516](https://www.cisecurity.org/benchmark/microsoft_365)
 
 ## Source
 

@@ -13,7 +13,7 @@ keywords:
   - "CIS"
   - "CIS E5 Level 2"
   - "CIS E5"
-  - "CIS M365 v6.0.1"
+  - "CIS M365 v7.0.0"
   - "L2"
 ---
 
@@ -107,7 +107,7 @@ New-SafeLinksRule -Name "CIS SafeLinks" -SafeLinksPolicy "CIS SafeLinks Policy" 
 * [Set-SafeLinksPolicy](https://learn.microsoft.com/powershell/module/exchangepowershell/set-safelinkspolicy?view=exchange-ps)
 * [Set up Safe Links policies in Microsoft Defender for Office 365](https://learn.microsoft.com/defender-office-365/safe-links-policies-configure?view=o365-worldwide)
 * [Preset security policies in cloud organizations](https://learn.microsoft.com/defender-office-365/preset-security-policies?view=o365-worldwide)
-* [CIS Microsoft 365 Foundations Benchmark v6.0.1 - Page 73](https://www.cisecurity.org/benchmark/microsoft_365)
+* [CIS Microsoft 365 Foundations Benchmark v7.0.0 - Page 78](https://www.cisecurity.org/benchmark/microsoft_365)
 
 ## Test Metadata
 
@@ -118,7 +118,51 @@ New-SafeLinksRule -Name "CIS SafeLinks" -SafeLinksPolicy "CIS SafeLinks Policy" 
 | Suite | CIS |
 | Category | CIS E5 Level 2 |
 | PowerShell test | [Test-MtCisSafeLink](/docs/commands/Test-MtCisSafeLink) |
-| Tags | CIS, CIS E5, CIS E5 Level 2, CIS M365 v6.0.1, CIS.M365.2.1.1, L2 |
+| Tags | CIS, CIS E5, CIS E5 Level 2, CIS M365 v7.0.0, CIS.M365.2.1.1, L2 |
+
+## Remediation
+
+To create a Safe Links policy:
+
+1. Navigate to Microsoft 365 admin center [https://admin.microsoft.com](https://admin.microsoft.com).
+2. Under **Email & collaboration** select **Policies & rules**
+3. Select **Threat policies** then **Safe Links**
+4. Click on **+Create**
+5. Name the policy then click **Next**
+6. In **Domains** select all valid domains for the organization and **Next**
+7. Ensure the following **URL & click protection settings** are defined:
+
+**Email**
+
+* Checked **On: Safe Links checks a list of known, malicious links when users click links in email. URLs are rewritten by default**
+* Checked **Apply Safe Links to email messages sent within the organization**
+* Checked **Apply real-time URL scanning for suspicious links and links that point to files**
+* Checked **Wait for URL scanning to complete before delivering the message**
+* Unchecked **Do not rewrite URLs, do checks via Safe Links API only**.
+
+**Teams**
+
+* Checked **On: Safe Links checks a list of known, malicious links when users click links in Microsoft Teams. URLs are not rewritten**.
+
+**Office 365 Apps**
+
+* Checked On: **Safe Links checks a list of known, malicious links when users click links in Microsoft Office apps. URLs are not rewritten**
+
+**Click protection settings**
+
+* Checked: **Track user clicks**
+* Unchecked: **Let users click through the original URL**
+* There is no recommendation for organization branding
+
+8. Click **Next** twice and finally **Submit**.
+
+## Related Links
+
+* [Microsoft 365 Admin Center](https://admin.microsoft.com)
+* [Set-SafeLinksPolicy](https://learn.microsoft.com/powershell/module/exchangepowershell/set-safelinkspolicy?view=exchange-ps)
+* [Set up Safe Links policies in Microsoft Defender for Office 365](https://learn.microsoft.com/defender-office-365/safe-links-policies-configure?view=o365-worldwide)
+* [Preset security policies in cloud organizations](https://learn.microsoft.com/defender-office-365/preset-security-policies?view=o365-worldwide)
+* [CIS Microsoft 365 Foundations Benchmark v7.0.0 - Page 78](https://www.cisecurity.org/benchmark/microsoft_365)
 
 ## Source
 

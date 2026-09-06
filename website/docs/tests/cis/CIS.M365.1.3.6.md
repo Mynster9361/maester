@@ -13,7 +13,7 @@ keywords:
   - "CIS"
   - "CIS E5 Level 2"
   - "CIS E5"
-  - "CIS M365 v6.0.1"
+  - "CIS M365 v7.0.0"
   - "L2"
 ---
 
@@ -61,7 +61,7 @@ Set-OrganizationConfig -CustomerLockBoxEnabled $true
 
 * [Microsoft 365 Admin Center](https://admin.microsoft.com)
 * [Turn Customer Lockbox requests on or off](https://learn.microsoft.com/purview/customer-lockbox-requests#turn-customer-lockbox-requests-on-or-off)
-* [CIS Microsoft 365 Foundations Benchmark v6.0.1 - Page 61](https://www.cisecurity.org/benchmark/microsoft_365)
+* [CIS Microsoft 365 Foundations Benchmark v7.0.0 - Page 65](https://www.cisecurity.org/benchmark/microsoft_365)
 
 ## Test Metadata
 
@@ -72,7 +72,24 @@ Set-OrganizationConfig -CustomerLockBoxEnabled $true
 | Suite | CIS |
 | Category | CIS E5 Level 2 |
 | PowerShell test | [Test-MtCisCustomerLockBox](/docs/commands/Test-MtCisCustomerLockBox) |
-| Tags | CIS, CIS E5, CIS E5 Level 2, CIS M365 v6.0.1, CIS.M365.1.3.6, L2 |
+| Tags | CIS, CIS E5, CIS E5 Level 2, CIS M365 v7.0.0, CIS.M365.1.3.6, L2 |
+
+## Remediation
+
+To enable the Customer Lockbox feature:
+
+1. Navigate to Microsoft 365 admin center [https://admin.microsoft.com](https://admin.microsoft.com).
+2. Click to expand **Settings** then select **Org settings**.
+3. Select **Security & privacy** tab.
+4. Click **Customer lockbox**.
+5. Check the box **Require approval for all data access requests**.
+6. Click **Save**.
+
+## Related Links
+
+* [Microsoft 365 Admin Center](https://admin.microsoft.com)
+* [Turn Customer Lockbox requests on or off](https://learn.microsoft.com/purview/customer-lockbox-requests#turn-customer-lockbox-requests-on-or-off)
+* [CIS Microsoft 365 Foundations Benchmark v7.0.0 - Page 65](https://www.cisecurity.org/benchmark/microsoft_365)
 
 ## Source
 

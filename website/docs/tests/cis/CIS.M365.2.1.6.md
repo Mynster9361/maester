@@ -13,7 +13,7 @@ keywords:
   - "CIS"
   - "CIS E3 Level 1"
   - "CIS E3"
-  - "CIS M365 v6.0.1"
+  - "CIS M365 v7.0.0"
   - "L1"
 ---
 
@@ -67,7 +67,7 @@ Set-HostedOutboundSpamFilterPolicy -Identity Default -BccSuspiciousOutboundAddit
 
 * [Microsoft 365 Defender](https://security.microsoft.com)
 * [Outbound spam protection for cloud mailboxes](https://learn.microsoft.com/defender-office-365/outbound-spam-protection-about)
-* [CIS Microsoft 365 Foundations Benchmark v6.0.1 - Page 91](https://www.cisecurity.org/benchmark/microsoft_365)
+* [CIS Microsoft 365 Foundations Benchmark v7.0.0 - Page 99](https://www.cisecurity.org/benchmark/microsoft_365)
 
 ## Test Metadata
 
@@ -78,7 +78,26 @@ Set-HostedOutboundSpamFilterPolicy -Identity Default -BccSuspiciousOutboundAddit
 | Suite | CIS |
 | Category | CIS E3 Level 1 |
 | PowerShell test | [Test-MtCisOutboundSpamFilterPolicy](/docs/commands/Test-MtCisOutboundSpamFilterPolicy) |
-| Tags | CIS, CIS E3, CIS E3 Level 1, CIS M365 v6.0.1, CIS.M365.2.1.6, L1 |
+| Tags | CIS, CIS E3, CIS E3 Level 1, CIS M365 v7.0.0, CIS.M365.2.1.6, L1 |
+
+## Remediation
+
+To set the Exchange Online Spam Policies:
+
+1. Navigate to Microsoft 365 Defender [https://security.microsoft.com](https://security.microsoft.com)
+2. Under **Email & collaboration** select **Policies & rules**
+3. Select **Threat policies** then **Anti-spam**
+4. Click on the **Anti-spam outbound policy (default)**
+5. Select **Edit protection settings** then under **Notifications**
+6. Check **Send a copy of outbound messages that exceed these limits to these users and groups** then enter the desired email addresses
+7. Check **Notify these users and groups if a sender is blocked due to sending outbound spam** then enter the desired email addresses.
+8. Click **Save**.
+
+## Related Links
+
+* [Microsoft 365 Defender](https://security.microsoft.com)
+* [Outbound spam protection for cloud mailboxes](https://learn.microsoft.com/defender-office-365/outbound-spam-protection-about)
+* [CIS Microsoft 365 Foundations Benchmark v7.0.0 - Page 99](https://www.cisecurity.org/benchmark/microsoft_365)
 
 ## Source
 

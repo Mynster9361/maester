@@ -13,7 +13,7 @@ keywords:
   - "CIS"
   - "CIS E3 Level 1"
   - "CIS E3"
-  - "CIS M365 v6.0.1"
+  - "CIS M365 v7.0.0"
   - "L1"
 ---
 
@@ -36,6 +36,8 @@ By enabling DKIM with Office 365, messages that are sent from Exchange Online wi
 #### Impact
 
 There should be no impact of setting up DKIM however, organizations should ensure appropriate setup to ensure continuous mail-flow.
+
+>Note: Initial (MOERA, e.g. `contoso.onmicrosoft.com`) and coexistence (`*.mail.onmicrosoft.com`) domains are excluded from this check, as Microsoft automatically signs outbound mail for those domains.
 
 #### Remediation action
 
@@ -82,7 +84,7 @@ Set-DkimSigningConfig -Identity < domainName > -Enabled $True
 
 * [Microsoft 365 Defender](https://security.microsoft.com)
 * [Set up DKIM to sign mail from your cloud domain](https://learn.microsoft.com/defender-office-365/email-authentication-dkim-configure?view=o365-worldwide)
-* [CIS Microsoft 365 Foundations Benchmark v6.0.1 - Page 102](https://www.cisecurity.org/benchmark/microsoft_365)
+* [CIS Microsoft 365 Foundations Benchmark v7.0.0 - Page 112](https://www.cisecurity.org/benchmark/microsoft_365)
 
 ## Test Metadata
 
@@ -93,7 +95,54 @@ Set-DkimSigningConfig -Identity < domainName > -Enabled $True
 | Suite | CIS |
 | Category | CIS E3 Level 1 |
 | PowerShell test | [Test-MtCisDkim](/docs/commands/Test-MtCisDkim) |
-| Tags | CIS, CIS E3, CIS E3 Level 1, CIS M365 v6.0.1, CIS.M365.2.1.9, L1 |
+| Tags | CIS, CIS E3, CIS E3 Level 1, CIS M365 v7.0.0, CIS.M365.2.1.9, L1 |
+
+## Remediation
+
+To remediate using a DNS Provider:
+
+1. For each accepted domain in Exchange Online, two DNS entries are required.
+
+```txt
+Host name: selector1._domainkey
+Points to address or value: selector1-<domainGUID>._domainkey.<initialDomain>
+TTL: 3600
+Host name: selector2._domainkey
+Points to address or value: selector2-<domainGUID>._domainkey.<initialDomain>
+TTL: 3600
+```
+
+For Office 365, the selectors will always be **selector1** or **selector2**.
+
+domainGUID is the same as the domainGUID in the customized MX record for your custom domain that appears before mail.protection.outlook.com. For example, in the following MX record for the domain contoso.com, the domainGUID is contoso-com:
+
+```txt
+contoso.com. 3600 IN MX 5 contoso-com.mail.protection.outlook.com
+```
+
+The initial domain is the domain that you used when you signed up for Office 365. Initial domains always end with on.microsoft.com.
+
+1. After the DNS records are created, enable DKIM signing in Defender.
+2. Navigate to [Microsoft 365 Defender](https://security.microsoft.com)
+3. Expand **Email & collaboration** > **Policies & rules** > **Threat policies**.
+4. Under **Rules** section click **Email authentication settings**.
+5. Select **DKIM**
+6. Click on each domain and click **Enable** next to **Sign messages for this domain with DKIM signature**.
+
+Final remediation step using the Exchange Online PowerShell Module:
+
+1. Connect to Exchange Online service using `Connect-ExchangeOnline`.
+2. Run the following Exchange Online PowerShell command:
+
+```powershell
+Set-DkimSigningConfig -Identity < domainName > -Enabled $True
+```
+
+## Related Links
+
+* [Microsoft 365 Defender](https://security.microsoft.com)
+* [Set up DKIM to sign mail from your cloud domain](https://learn.microsoft.com/defender-office-365/email-authentication-dkim-configure?view=o365-worldwide)
+* [CIS Microsoft 365 Foundations Benchmark v7.0.0 - Page 112](https://www.cisecurity.org/benchmark/microsoft_365)
 
 ## Source
 
