@@ -27,13 +27,10 @@
 
     try {
         Write-Verbose 'Getting all Microsoft 365 Groups'
-        $365GroupList = Invoke-MtGraphRequest -RelativeUri 'groups' -ApiVersion v1.0
-
-        Write-Verbose 'Filtering to unified (Microsoft 365) groups only'
-        $unified365Groups = $365GroupList | Where-Object { $_.groupTypes -contains 'Unified' }
+        $365GroupList = Invoke-MtGraphRequest -RelativeUri 'groups' -ApiVersion v1.0 -Filter "groupTypes/any(c:c eq 'Unified')"
 
         Write-Verbose 'Filtering out private 365 groups'
-        $result = $unified365Groups | Where-Object { $_.visibility -eq 'Public' }
+        $result = $365GroupList | Where-Object { $_.visibility -eq 'Public' }
 
         $testResult = ($result | Measure-Object).Count -eq 0
 
