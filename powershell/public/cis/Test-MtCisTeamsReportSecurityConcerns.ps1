@@ -4,7 +4,7 @@
     Ensure users can report security concerns in Teams
 
     .DESCRIPTION
-    Report security concerns in Teams only to internal destination
+    Ensures users can report security concerns in Teams, with reports directed only to an internal destination.
     CIS Microsoft 365 Foundations Benchmark v7.0.0 (8.6.1, E5 L1)
 
     .EXAMPLE

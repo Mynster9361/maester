@@ -57,10 +57,10 @@
         $portalLink = "https://security.microsoft.com/presetSecurityPolicies"
 
         if ($testResult) {
-            $testResultMarkdown = "Well done. Your tenants default malware filter policy has the common attachment file filter enabled with the default extensions blocked ($portalLink).`n`n%TestResult%"
+            $testResultMarkdown = "Well done. Your tenant's default malware filter policy has the common attachment file filter enabled with the default extensions blocked ($portalLink).`n`n%TestResult%"
         }
         else {
-            $testResultMarkdown = "Your tenants default malware filter policy does not have the common attachment file filter fully enabled ($portalLink).`n`n%TestResult%"
+            $testResultMarkdown = "Your tenant's default malware filter policy does not have the common attachment file filter fully enabled ($portalLink).`n`n%TestResult%"
         }
 
         $resultMd = "| Setting | Result |`n"

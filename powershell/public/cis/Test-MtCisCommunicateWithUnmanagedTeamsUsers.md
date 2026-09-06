@@ -24,7 +24,7 @@ Users will be unable to communicate with Teams users who are not managed by an o
 To remediate using the UI:
 
 1. Navigate to [Microsoft 365 Teams Admin Center](https://admin.teams.microsoft.com).
-2. Click to expand **External collaboration** select **External access**.
+2. Click to expand **External collaboration** and select **External access**.
 3. Select the **Policies** tab
 4. Click on the **Global (Org-wide default)** policy.
 5. Set **People in my org can chat and have meetings with external users who have unmanaged Microsoft accounts** to **Off**.

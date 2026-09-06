@@ -14,7 +14,7 @@ Describe 'DKIM checks with no signing configuration' -ForEach @(
         }
     }
 
-    It '<CommandName> returns <ExpectedOutcome> for <DomainName>' -ForEach @(
+    It '<CommandName> handles domain <DomainName> correctly' -ForEach @(
         @{
             DomainName                = 'contoso.onmicrosoft.com'
             InitialDomain             = $true
