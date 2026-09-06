@@ -72,21 +72,6 @@ Set-TeamsProtectionPolicy -Identity "Teams Protection Policy" -ZapEnabled $true
 | PowerShell test | [Test-MtCisZAP](/docs/commands/Test-MtCisZAP) |
 | Tags | CIS, CIS E5, CIS E5 Level 1, CIS M365 v7.0.0, CIS.M365.2.4.4, L1 |
 
-## Remediation
-
-To enable Zero-hour auto purge for Microsoft Teams:
-
-1. Navigate to [Microsoft 365 Defender](https://security.microsoft.com)
-2. Click to expand **System** select **Settings** > **Email & collaboration** > **Microsoft Teams protection**
-3. Set **Zero-hour auto purge (ZAP)** to **On (Default)**.
-
-## Related Links
-
-* [Microsoft 365 Admin Center](https://admin.microsoft.com)
-* [Zero-hour auto purge (ZAP) in Microsoft Teams](https://learn.microsoft.com/defender-office-365/zero-hour-auto-purge?view=o365-worldwide#zero-hour-auto-purge-zap-in-microsoft-teams)
-* [Configure ZAP for Teams protection in Defender for Office 365](https://learn.microsoft.com/defender-office-365/mdo-support-teams-about?view=o365-worldwide#configure-zap-for-teams-protection-in-defender-for-office-365-plan-2)
-* [CIS Microsoft 365 Foundations Benchmark v7.0.0 - Page 157](https://www.cisecurity.org/benchmark/microsoft_365)
-
 ## Source
 
 - Pester test: `tests/cis/Test-MtCisZAP.Tests.ps1`

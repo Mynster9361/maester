@@ -76,31 +76,6 @@ Invoke-MgGraphRequest -Method PATCH -Uri "https://graph.microsoft.com/v1.0/polic
 | PowerShell test | [Test-MtCisEnsureBitLockerKeyRecoveryRestricted](/docs/commands/Test-MtCisEnsureBitLockerKeyRecoveryRestricted) |
 | Tags | CIS, CIS E3, CIS E3 Level 2, CIS E5, CIS E5 Level 2, CIS M365 v7.0.0, CIS.M365.5.1.4.6, L2, Security |
 
-## Remediation
-
-1. Navigate to [Microsoft 365 Entra admin center](https://entra.microsoft.com).
-2. Click to expand **Entra ID** and select **Devices** > **Device settings**.
-3. Set **Restrict non-admin users from recovering the BitLocker key(s) for their owned devices** to **Yes**.
-4. Click the **Save** option at the top of the window.
-
-Alternatively, use Microsoft Graph PowerShell:
-
-```powershell
-Connect-MgGraph -Scopes Policy.ReadWrite.Authorization
-$params = @{
- defaultUserRolePermissions = @{
-  allowedToReadBitlockerKeysForOwnedDevice = $false
- }
-}
-Invoke-MgGraphRequest -Method PATCH -Uri "https://graph.microsoft.com/v1.0/policies/authorizationPolicy" -Body $params
-```
-
-## Related Links
-
-* [Microsoft 365 Entra admin center - Device settings](https://entra.microsoft.com/#view/Microsoft_AAD_Devices/DevicesMenuBlade/~/DeviceSettings/menuId/Overview)
-* [Manage devices in Microsoft Entra ID using the Microsoft Entra admin center](https://learn.microsoft.com/entra/identity/devices/manage-device-identities#configure-device-settings)
-* [CIS Microsoft 365 Foundations Benchmark v7.0.0 - Page 235](https://www.cisecurity.org/benchmark/microsoft_365)
-
 ## Source
 
 - Pester test: `tests/cis/Test-MtCisEnsureBitLockerKeyRecoveryRestricted.Tests.ps1`

@@ -19,7 +19,7 @@ To implement a new policy containing a comprehensive list of extensions:
 1. Connect to Exchange Online using `Connect-ExchangeOnline`.
 2. Run the following script after editing **InternalSenderAdminAddress**:
 
-```
+```powershell
 # Create an attachment policy and associated rule. The rule is
 # intentionally disabled allowing the org to enable it when ready
 $Policy = @{

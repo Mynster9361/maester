@@ -77,13 +77,6 @@ AdditionalStorageProvidersAvailable : True
 | PowerShell test | [Test-MtCisExoAdditionalStorageProvider](/docs/commands/Test-MtCisExoAdditionalStorageProvider) |
 | Tags | CIS, CIS E3, CIS E3 Level 2, CIS E5, CIS E5 Level 2, CIS M365 v7.0.0, CIS.M365.6.5.3, L2, Security |
 
-## Related Links
-
-* [Set-OwaMailboxPolicy](https://learn.microsoft.com/powershell/module/exchangepowershell/set-owamailboxpolicy?view=exchange-ps)
-* [3rd party cloud storage services supported by Office apps](https://support.microsoft.com/office/3rd-party-cloud-storage-services-supported-by-office-apps-fce12782-eccc-4cf5-8f4b-d1ebec513f72)
-* [Microsoft Secure Score - Restrict third-party storage services](https://security.microsoft.com/securescore)
-* [CIS Microsoft 365 Foundations Benchmark v7.0.0 - Page 454](https://www.cisecurity.org/benchmark/microsoft_365)
-
 ## Source
 
 - Pester test: `tests/cis/Test-MtCisExoAdditionalStorageProvider.Tests.ps1`

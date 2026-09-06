@@ -73,22 +73,6 @@ Set-SharingPolicy -Identity "Default Sharing Policy" -Enabled $False
 | PowerShell test | [Test-MtCisCalendarSharing](/docs/commands/Test-MtCisCalendarSharing) |
 | Tags | CIS, CIS E3, CIS E3 Level 2, CIS M365 v7.0.0, CIS.M365.1.3.3, L2 |
 
-## Remediation
-
-To remediate using the UI:
-
-1. Navigate to Microsoft 365 admin center [https://admin.microsoft.com](https://admin.microsoft.com).
-2. Click to expand **Settings** select **Org settings**.
-3. In the **Services** section click **Calendar**.
-4. Uncheck **Let your users share their calendars with people outside of your organization who have Office 365 or Exchange**.
-5. Click **Save**.
-
-## Related Links
-
-* [Microsoft 365 Admin Center](https://admin.microsoft.com)
-* [Share Microsoft 365 calendars with people outside your organization](https://learn.microsoft.com/microsoft-365/admin/manage/share-calendars-with-external-users?view=o365-worldwide)
-* [CIS Microsoft 365 Foundations Benchmark v7.0.0 - Page 56](https://www.cisecurity.org/benchmark/microsoft_365)
-
 ## Source
 
 - Pester test: `tests/cis/Test-MtCisCalendarSharing.Tests.ps1`

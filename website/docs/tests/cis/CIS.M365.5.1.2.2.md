@@ -74,19 +74,6 @@ Update-MgPolicyAuthorizationPolicy -DefaultUserRolePermissions $param
 | PowerShell test | [Test-MtCisThirdPartyApplicationsDisallowed](/docs/commands/Test-MtCisThirdPartyApplicationsDisallowed) |
 | Tags | CIS, CIS E3, CIS E3 Level 1, CIS E5, CIS E5 Level 1, CIS M365 v7.0.0, CIS.M365.5.1.2.2, L1, Security |
 
-## Remediation
-
-1. Navigate to [Microsoft 365 Entra admin center](https://entra.microsoft.com).
-2. Click to expand **Entra ID** > **Users** select **Users settings**.
-3. Set **Users can register applications** to **No**.
-4. Click **Save**.
-
-## Related Links
-
-* [Microsoft 365 Entra admin center](https://entra.microsoft.com)
-* [How and why applications are added to Microsoft Entra ID](https://learn.microsoft.com/entra/identity-platform/how-applications-are-added)
-* [CIS Microsoft 365 Foundations Benchmark v7.0.0 - Page 197](https://www.cisecurity.org/benchmark/microsoft_365)
-
 ## Source
 
 - Pester test: `tests/cis/Test-MtCisThirdPartyApplicationsDisallowed.Tests.ps1`

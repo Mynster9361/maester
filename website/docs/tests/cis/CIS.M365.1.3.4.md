@@ -87,20 +87,6 @@ Invoke-MgGraphRequest -Method PATCH -Uri $uri -Body $body
 | PowerShell test | [Test-MtCisUserOwnedAppsRestricted](/docs/commands/Test-MtCisUserOwnedAppsRestricted) |
 | Tags | CIS, CIS E3, CIS E3 Level 1, CIS E5, CIS E5 Level 1, CIS M365 v7.0.0, CIS.M365.1.3.4, L1, Security |
 
-## Remediation
-
-1. Navigate to [Microsoft 365 admin center](https://admin.microsoft.com).
-2. Click to expand **Settings** select **Org settings**.
-3. In **Services** select **User owned apps and services.**
-4. Uncheck **Let users access the Office Store** and **Let users start trials on behalf of your organization**
-5. Click **Save**.
-
-## Related Links
-
-* [Microsoft 365 admin center](https://admin.microsoft.com)
-* [Manage add-ins in the Microsoft 365 admin center](https://learn.microsoft.com/microsoft-365/admin/manage/manage-addins-in-the-admin-center?view=o365-worldwide&tabs=word-excel-powerpoint#manage-add-in-downloads-by-turning-onoff-the-office-store-across-all-apps-except-outlook)
-* [CIS Microsoft 365 Foundations Benchmark v7.0.0 - Page 59](https://www.cisecurity.org/benchmark/microsoft_365)
-
 ## Source
 
 - Pester test: `tests/cis/Test-MtCisUserOwnedAppsRestricted.Tests.ps1`

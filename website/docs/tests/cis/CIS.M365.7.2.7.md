@@ -81,11 +81,6 @@ Set-SPOTenant -DefaultSharingLinkType Internal
 | PowerShell test | [Test-MtCisSpoDefaultSharingLink](/docs/commands/Test-MtCisSpoDefaultSharingLink) |
 | Tags | CIS, CIS E3, CIS E3 Level 1, CIS E5, CIS E5 Level 1, CIS M365 v7.0.0, CIS.M365.7.2.7, L1, OneDrive, SharePoint Online |
 
-## Related Links
-
-* [Set-SPOTenant](https://learn.microsoft.com/powershell/module/microsoft.online.sharepoint.powershell/set-spotenant?view=sharepoint-ps)
-* [CIS Microsoft 365 Foundations Benchmark v7.0.0 - Page 480](https://www.cisecurity.org/benchmark/microsoft_365)
-
 ## Source
 
 - Pester test: `tests/cis/Test-MtCisSpoDefaultSharingLink.Tests.ps1`

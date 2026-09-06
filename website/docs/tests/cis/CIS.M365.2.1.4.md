@@ -90,29 +90,6 @@ New-SafeAttachmentRule -Name "CIS 2.1.4 Rule" -SafeAttachmentPolicy "CIS 2.1.4" 
 | PowerShell test | [Test-MtCisSafeAttachment](/docs/commands/Test-MtCisSafeAttachment) |
 | Tags | CIS, CIS E5, CIS E5 Level 2, CIS M365 v7.0.0, CIS.M365.2.1.4, L2 |
 
-## Remediation
-
-To enable the Safe Attachments policy:
-
-1. Navigate to [Microsoft 365 Defender](https://security.microsoft.com).
-2. Click to expand **E-mail & Collaboration** select **Policies & rules**.
-3. On the Policies & rules page select **Threat policies**.
-4. Under **Policies** select **Safe Attachments**.
-5. Click + **Create**.
-6. Create a Policy Name and Description, and then click **Next**.
-7. Select all valid domains and click Next.
-8. Select **Block**.
-9. Quarantine policy is **AdminOnlyAccessPolicy**.
-10. Leave **Enable redirect** unchecked.
-11. Click **Next** and finally **Submit**.
-
-## Related Links
-
-* [Microsoft 365 Defender](https://security.microsoft.com)
-* [Safe Attachments in Microsoft Defender for Office 365](https://learn.microsoft.com/defender-office-365/safe-attachments-about)
-* [Set up Safe Attachments policies in Microsoft Defender for Office 365](https://learn.microsoft.com/defender-office-365/safe-attachments-policies-configure)
-* [CIS Microsoft 365 Foundations Benchmark v7.0.0 - Page 92](https://www.cisecurity.org/benchmark/microsoft_365)
-
 ## Source
 
 - Pester test: `tests/cis/Test-MtCisSafeAttachment.Tests.ps1`

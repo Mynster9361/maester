@@ -66,21 +66,6 @@ To approve requests, a reviewer must be a Global Administrator, Cloud Applicatio
 | PowerShell test | [Test-MtCisAdminConsentWorkflowEnabled](/docs/commands/Test-MtCisAdminConsentWorkflowEnabled) |
 | Tags | CIS, CIS E3, CIS E3 Level 1, CIS E5, CIS E5 Level 1, CIS M365 v7.0.0, CIS.M365.5.1.5.2, L1, Security |
 
-## Remediation
-
-1. Navigate to [Microsoft Entra ID admin center](https://entra.microsoft.com).
-2. Under **Entra ID** select **Enterprise apps**
-3. Under **Security** select **Consent and permissions**
-4. Under **Manage** select **Admin consent settings**
-5. Set **Users can request admin consent to apps they are unable to consent to** to **Yes**
-6. Click Save.
-
-## Related Links
-
-* [Microsoft Entra ID admin center](https://entra.microsoft.com)
-* [Configure the admin consent workflow](https://learn.microsoft.com/entra/identity/enterprise-apps/configure-admin-consent-workflow)
-* [CIS Microsoft 365 Foundations Benchmark v7.0.0 - Page 242](https://www.cisecurity.org/benchmark/microsoft_365)
-
 ## Source
 
 - Pester test: `tests/cis/Test-MtCisAdminConsentWorkflowEnabled.Tests.ps1`

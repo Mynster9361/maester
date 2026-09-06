@@ -94,22 +94,6 @@ Update-MgPolicyAuthorizationPolicy -GuestUserRoleId '2af84b1e-32c8-42b7-82bc-daa
 | PowerShell test | [Test-MtCisEnsureGuestAccessRestricted](/docs/commands/Test-MtCisEnsureGuestAccessRestricted) |
 | Tags | CIS, CIS E3, CIS E3 Level 1, CIS E5, CIS E5 Level 1, CIS M365 v7.0.0, CIS.M365.5.1.6.2, L1, Security |
 
-## Remediation
-
-1. Navigate to [Microsoft Entra ID admin center](https://entra.microsoft.com).
-2. Click to expand **Entra ID** > **External Identities** select **External collaboration settings**.
-3. Under **Guest user access** set **Guest user access restrictions** to one of the following:
-
-* State: **Guest users have limited access to properties and memberships of directory objects**
-* State: **Guest user access is restricted to properties and memberships of their own directory objects (most restrictive)**
-
-## Related Links
-
-* [Microsoft Entra ID admin center](https://entra.microsoft.com)
-* [Restrict guest access permissions in Microsoft Entra ID](https://learn.microsoft.com/entra/identity/users/users-restrict-guest-permissions)
-* [Cyber Kill Chain](https://www.lockheedmartin.com/en-us/capabilities/cyber/cyber-kill-chain.html)
-* [CIS Microsoft 365 Foundations Benchmark v7.0.0 - Page 269](https://www.cisecurity.org/benchmark/microsoft_365)
-
 ## Source
 
 - Pester test: `tests/cis/Test-MtCisEnsureGuestAccessRestricted.Tests.ps1`

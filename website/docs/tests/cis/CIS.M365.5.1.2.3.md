@@ -74,18 +74,6 @@ Update-MgPolicyAuthorizationPolicy -DefaultUserRolePermissions $params
 | PowerShell test | [Test-MtCisCreateTenantDisallowed](/docs/commands/Test-MtCisCreateTenantDisallowed) |
 | Tags | CIS, CIS E3, CIS E3 Level 1, CIS E5, CIS E5 Level 1, CIS M365 v7.0.0, CIS.M365.5.1.2.3, L1, Security |
 
-## Remediation
-
-1. Navigate to [Microsoft 365 Entra admin center](https://entra.microsoft.com).
-2. Click to expand **Entra ID** > **Users** > **User settings**.
-3. Set **Restrict non-admin users from creating tenants** to **Yes** then **Save**.
-
-## Related Links
-
-* [Microsoft 365 Entra admin center](https://entra.microsoft.com)
-* [Restrict member users' default permissions](https://learn.microsoft.com/entra/fundamentals/users-default-permissions#restrict-member-users-default-permissions)
-* [CIS Microsoft 365 Foundations Benchmark v7.0.0 - Page 200](https://www.cisecurity.org/benchmark/microsoft_365)
-
 ## Source
 
 - Pester test: `tests/cis/Test-MtCisCreateTenantDisallowed.Tests.ps1`

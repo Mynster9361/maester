@@ -76,25 +76,6 @@ Set-AtpPolicyForO365 -EnableATPForSPOTeamsODB $true -EnableSafeDocs $true -Allow
 | PowerShell test | [Test-MtCisSafeAttachmentsAtpPolicy](/docs/commands/Test-MtCisSafeAttachmentsAtpPolicy) |
 | Tags | CIS, CIS E5, CIS E5 Level 2, CIS M365 v7.0.0, CIS.M365.2.1.5, L2 |
 
-## Remediation
-
-To enable Safe Attachments for SharePoint, OneDrive, and Microsoft Teams:
-
-1. Navigate to Microsoft 365 Defender [https://security.microsoft.com](https://security.microsoft.com)
-2. Under **Email & collaboration** select **Policies & rules**
-3. Select **Threat policies** then **Safe Attachments**
-4. Click on **Global settings**
-5. Click to **Enable Turn on Defender for Office 365 for SharePoint, OneDrive, and Microsoft Teams**
-6. Click to **Enable Turn on Safe Documents for Office clients**
-7. Click to **Disable Allow people to click through Protected View even if Safe Documents identified the file as malicious**
-8. Click **Save**.
-
-## Related Links
-
-* [Microsoft 365 Defender](https://security.microsoft.com)
-* [Safe Attachments for SharePoint, OneDrive, and Microsoft Teams](https://learn.microsoft.com/defender-office-365/safe-attachments-for-spo-odfb-teams-about)
-* [CIS Microsoft 365 Foundations Benchmark v7.0.0 - Page 96](https://www.cisecurity.org/benchmark/microsoft_365)
-
 ## Source
 
 - Pester test: `tests/cis/Test-MtCisSafeAttachmentsAtpPolicy.Tests.ps1`

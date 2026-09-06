@@ -72,13 +72,6 @@ Set-SPOTenant -EnableAzureADB2BIntegration $true
 | PowerShell test | [Test-MtCisSpoB2BIntegration](/docs/commands/Test-MtCisSpoB2BIntegration) |
 | Tags | CIS, CIS E3, CIS E3 Level 1, CIS E5, CIS E5 Level 1, CIS M365 v7.0.0, CIS.M365.7.2.2, L1, OneDrive, SharePoint Online |
 
-## Related Links
-
-* [Enabling the integration](https://learn.microsoft.com/sharepoint/sharepoint-azureb2b-integration#enabling-the-integration)
-* [What is Microsoft Entra B2B collaboration?](https://learn.microsoft.com/entra/external-id/what-is-b2b)
-* [Set-SPOTenant](https://learn.microsoft.com/powershell/module/microsoft.online.sharepoint.powershell/set-spotenant?view=sharepoint-ps)
-* [CIS Microsoft 365 Foundations Benchmark v7.0.0 - Page 466](https://www.cisecurity.org/benchmark/microsoft_365)
-
 ## Source
 
 - Pester test: `tests/cis/Test-MtCisSpoB2BIntegration.Tests.ps1`

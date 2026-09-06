@@ -109,25 +109,6 @@ New-ReportSubmissionRule -Name DefaultReportSubmissionRule -ReportSubmissionPoli
 | PowerShell test | [Test-MtCisTeamsReportSecurityConcerns](/docs/commands/Test-MtCisTeamsReportSecurityConcerns) |
 | Tags | CIS, CIS E5, CIS E5 Level 1, CIS M365 v7.0.0, CIS.M365.8.6.1, L1 |
 
-## Remediation
-
-1. Navigate to [Microsoft Teams Admin Center](https://admin.teams.microsoft.com).
-2. Select **Settings & policies** > **Global (Org-wide default) settings**.
-3. Select **Messaging** to open the **messaging settings** section.
-4. Set **Report a security concern** to **On**.
-5. Next, navigate to [Microsoft 365 Defender](https://security.microsoft.com).
-6. Click on **Settings** > **Email & collaboration** > **User reported settings**.
-7. Scroll to **Microsoft Teams**.
-8. Check **Monitor reported messages in Microsoft Teams** and **Save**.
-9. Set **Send reported messages to:** to **My reporting mailbox only** with reports configured to be sent to authorized staff.
-
-## Related Links
-
-* [Microsoft Teams Admin Center](https://admin.teams.microsoft.com)
-* [Microsoft 365 Defender](https://security.microsoft.com)
-* [User reported settings in Microsoft Teams](https://learn.microsoft.com/defender-office-365/submissions-teams?view=o365-worldwide)
-* [CIS Microsoft 365 Foundations Benchmark v7.0.0 - Page 554](https://www.cisecurity.org/benchmark/microsoft_365)
-
 ## Source
 
 - Pester test: `tests/cis/Test-MtCisTeamsReportSecurityConcerns.Tests.ps1`

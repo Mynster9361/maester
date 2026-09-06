@@ -77,21 +77,6 @@ Invoke-MgGraphRequest -Method PATCH -Uri $uri -Body $body
 | PowerShell test | [Test-MtCisFormsPhishingProtectionEnabled](/docs/commands/Test-MtCisFormsPhishingProtectionEnabled) |
 | Tags | CIS, CIS E3, CIS E3 Level 1, CIS E5, CIS E5 Level 1, CIS M365 v7.0.0, CIS.M365.1.3.5, L1, Security |
 
-## Remediation
-
-1. Navigate to [Microsoft 365 admin center](https://admin.microsoft.com).
-2. Click to expand **Settings** select **Org settings**.
-3. In **Services** select **Microsoft Forms**
-4. Enable **Add internal phishing protection** under **Phishing protection**
-5. Click Save.
-
-## Related Links
-
-* [Microsoft 365 admin center](https://admin.microsoft.com)
-* [Administrator settings for Microsoft Forms](https://learn.microsoft.com/microsoft-forms/administrator-settings-microsoft-forms)
-* [Review and unblock forms or users detected and blocked for potential phishing](https://learn.microsoft.com/microsoft-forms/review-unblock-forms-users-detected-blocked-potential-phishing)
-* [CIS Microsoft 365 Foundations Benchmark v7.0.0 - Page 63](https://www.cisecurity.org/benchmark/microsoft_365)
-
 ## Source
 
 - Pester test: `tests/cis/Test-MtCisFormsPhishingProtectionEnabled.Tests.ps1`

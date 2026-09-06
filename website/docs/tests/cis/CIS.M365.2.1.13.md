@@ -75,24 +75,6 @@ Set-HostedConnectionFilterPolicy -Identity Default -EnableSafeList $false
 | PowerShell test | [Test-MtCisConnectionFilterSafeList](/docs/commands/Test-MtCisConnectionFilterSafeList) |
 | Tags | CIS, CIS E3, CIS E3 Level 1, CIS M365 v7.0.0, CIS.M365.2.1.13, L1 |
 
-## Remediation
-
-1. Navigate to [Microsoft 365 Defender](https://security.microsoft.com).
-2. Click to expand **Email & collaboration** select **Policies & rules**> **Threat policies**.
-3. Under Policies select **Anti-spam**.
-4. Click on the **Connection filter policy (Default)**.
-5. Click **Edit connection filter policy**.
-6. Uncheck **Turn on safe list**.
-7. Click **Save**.
-
-## Related Links
-
-* [Microsoft 365 Defender](https://security.microsoft.com)
-* [Configure connection filtering in cloud organizations](https://learn.microsoft.com/defender-office-365/connection-filter-policies-configure)
-* [Create sender allowlists for cloud mailboxes](https://learn.microsoft.com/defender-office-365/create-safe-sender-lists-in-office-365#use-the-ip-allow-list)
-* [When user and organization settings conflict](https://learn.microsoft.com/defender-office-365/how-policies-and-protections-are-combined#user-and-tenant-settings-conflict)
-* [CIS Microsoft 365 Foundations Benchmark v7.0.0 - Page 131](https://www.cisecurity.org/benchmark/microsoft_365)
-
 ## Source
 
 - Pester test: `tests/cis/Test-MtCisConnectionFilterSafeList.Tests.ps1`

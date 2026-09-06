@@ -68,21 +68,6 @@ Set-AdminAuditLogConfig -UnifiedAuditLogIngestionEnabled $true
 | PowerShell test | [Test-MtCisAuditLogSearch](/docs/commands/Test-MtCisAuditLogSearch) |
 | Tags | CIS, CIS E3, CIS E3 Level 1, CIS M365 v7.0.0, CIS.M365.3.1.1, L1 |
 
-## Remediation
-
-1. Navigate to [Microsoft 365 Purview](https://purview.microsoft.com).
-2. Select **Solutions** and then **Audit** to open the audit search.
-3. Click blue bar **Start recording user and admin activity**.
-4. Click **Yes** on the dialog box to confirm.
-
-## Related Links
-
-* [Microsoft 365 Purview](https://purview.microsoft.com)
-* [CIS Microsoft 365 Foundations Benchmark v7.0.0 - Page 164](https://www.cisecurity.org/benchmark/microsoft_365)
-* [Turn auditing on or off](https://learn.microsoft.com/purview/audit-log-enable-disable?view=o365-worldwide&tabs=microsoft-purview-portal)
-* [Set-AdminAuditLogConfig](https://learn.microsoft.com/powershell/module/exchangepowershell/set-adminauditlogconfig?view=exchange-ps)
-* [Verify the auditing status for your organization](https://learn.microsoft.com/purview/audit-log-enable-disable?view=o365-worldwide&tabs=microsoft-purview-portal#verify-the-auditing-status-for-your-organization)
-
 ## Source
 
 - Pester test: `tests/cis/Test-MtCisAuditLogSearch.Tests.ps1`

@@ -62,16 +62,6 @@ Remediation will require first identifying the privileged accounts that are sync
 | PowerShell test | [Test-MtCisCloudAdmin](/docs/commands/Test-MtCisCloudAdmin) |
 | Tags | CIS, CIS E3, CIS E3 Level 1, CIS M365 v7.0.0, CIS.M365.1.1.1, L1 |
 
-## Related Links
-
-* [Microsoft 365 Admin Center](https://admin.microsoft.com)
-* [Add users and assign licenses in Microsoft 365](https://learn.microsoft.com/microsoft-365/admin/add-users/add-users?view=o365-worldwide)
-* [Step 2. Protect your Microsoft 365 privileged accounts](https://learn.microsoft.com/microsoft-365/enterprise/protect-your-global-administrator-accounts?view=o365-worldwide)
-* [9. Use cloud native accounts for Microsoft Entra roles](https://learn.microsoft.com/entra/identity/role-based-access-control/best-practices#9-use-cloud-native-accounts-for-microsoft-entra-roles)
-* [What is Microsoft Entra?](https://learn.microsoft.com/entra/fundamentals/what-is-entra)
-* [Microsoft Entra built-in roles](https://learn.microsoft.com/entra/identity/role-based-access-control/permissions-reference)
-* [CIS Microsoft 365 Foundations Benchmark v7.0.0 - Page 21](https://www.cisecurity.org/benchmark/microsoft_365)
-
 ## Source
 
 - Pester test: `tests/cis/Test-MtCisCloudAdmin.Tests.ps1`

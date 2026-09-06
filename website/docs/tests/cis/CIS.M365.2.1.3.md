@@ -80,25 +80,6 @@ Set-MalwareFilterPolicy -Identity '{Identity Name}' -EnableInternalSenderAdminNo
 | PowerShell test | [Test-MtCisInternalMalwareNotification](/docs/commands/Test-MtCisInternalMalwareNotification) |
 | Tags | CIS, CIS E3, CIS E3 Level 1, CIS M365 v7.0.0, CIS.M365.2.1.3, L1 |
 
-## Remediation
-
-To enable notifications for internal users sending malware:
-
-1. Navigate to Microsoft 365 Defender [https://security.microsoft.com](https://security.microsoft.com).
-2. Click to expand **E-mail & Collaboration** select **Policies & rules**.
-3. On the Policies & rules page select **Threat policies**.
-4. Under Policies select **Anti-malware**.
-5. Click on the **Default (Default)** policy.
-6. Click on **Edit protection settings** and change the settings for **Notify an admin about undelivered messages from internal senders** to **On** and enter the email address of the administrator who should be notified under **Administrator email address**.
-7. Click Save.
-
-## Related Links
-
-* [Microsoft 365 Defender](https://security.microsoft.com)
-* [Anti-malware protection for cloud mailboxes](https://learn.microsoft.com/defender-office-365/anti-malware-protection-about)
-* [Configure anti-malware policies for cloud mailboxes](https://learn.microsoft.com/defender-office-365/anti-malware-policies-configure)
-* [CIS Microsoft 365 Foundations Benchmark v7.0.0 - Page 88](https://www.cisecurity.org/benchmark/microsoft_365)
-
 ## Source
 
 - Pester test: `tests/cis/Test-MtCisInternalMalwareNotification.Tests.ps1`

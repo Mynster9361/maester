@@ -79,24 +79,6 @@ Update-MgDomain -DomainId <Domain> -PasswordValidityPeriodInDays 2147483647
 | PowerShell test | [Test-MtCisPasswordExpiry](/docs/commands/Test-MtCisPasswordExpiry) |
 | Tags | CIS, CIS E3, CIS E3 Level 1, CIS M365 v7.0.0, CIS.M365.1.3.1, L1 |
 
-## Remediation
-
-To set Office 365 passwords are set to never expire:
-
-1. Navigate to [Microsoft 365 admin center](https://admin.microsoft.com).
-2. Click to expand **Settings** select **Org Settings**.
-3. Click on **Security & privacy**.
-4. Check the **Set passwords to never expire (recommended)** box.
-5. Click **Save**.
-
-## Related Links
-
-* [Microsoft 365 Admin Center](https://admin.microsoft.com)
-* [NIST Special Publication 800-63B](https://pages.nist.gov/800-63-3/sp800-63b.html)
-* [CIS Password Policy Guide](https://www.cisecurity.org/insights/white-papers/cis-password-policy-guide)
-* [Password policy recommendations for Microsoft 365 passwords](https://learn.microsoft.com/microsoft-365/admin/misc/password-policy-recommendations?view=o365-worldwide)
-* [CIS Microsoft 365 Foundations Benchmark v7.0.0 - Page 47](https://www.cisecurity.org/benchmark/microsoft_365)
-
 ## Source
 
 - Pester test: `tests/cis/Test-MtCisPasswordExpiry.Tests.ps1`

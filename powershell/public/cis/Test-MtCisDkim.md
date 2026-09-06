@@ -35,7 +35,7 @@ domainGUID is the same as the domainGUID in the customized MX record for your cu
 contoso.com. 3600 IN MX 5 contoso-com.mail.protection.outlook.com
 ```
 
-The initial domain is the domain that you used when you signed up for Office 365. Initial domains always end with on.microsoft.com.
+The initial domain is the domain that you used when you signed up for Office 365. Initial domains always end with onmicrosoft.com.
 
 1. After the DNS records are created, enable DKIM signing in Defender.
 2. Navigate to [Microsoft 365 Defender](https://security.microsoft.com)

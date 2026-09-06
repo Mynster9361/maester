@@ -46,8 +46,8 @@ To enable the Common Attachment Types Filter:
 1. Navigate to [Microsoft 365 Defender](https://security.microsoft.com).
 2. Click to expand **Email & collaboration** select **Policies & rules**.
 3. On the Policies & rules page select **Threat policies**.
-4. Under polices select **Anti-malware** and click on the **Default (Default)** policy.
-5. On the Policy page that appears on the right hand pane scroll to the bottom and click on **Edit protection settings**, check the **Enable the common attachments filter**.
+4. Under policies select **Anti-malware** and click on the **Default (Default)** policy.
+5. On the Policy page that appears on the right-hand pane scroll to the bottom and click on **Edit protection settings**, check the **Enable the common attachments filter**.
 6. If any of the default file types are missing, click **Select file types** and add the missing file types in.
 7. Click Save.
 
@@ -90,25 +90,6 @@ vbs, vxd, wsc, wsf, wsh, xll, xz, z, ace
 | Category | CIS E3 Level 1 |
 | PowerShell test | [Test-MtCisAttachmentFilter](/docs/commands/Test-MtCisAttachmentFilter) |
 | Tags | CIS, CIS E3, CIS E3 Level 1, CIS M365 v7.0.0, CIS.M365.2.1.2, L1 |
-
-## Remediation
-
-To enable the Common Attachment Types Filter:
-
-1. Navigate to [Microsoft 365 Defender](https://security.microsoft.com).
-2. Click to expand **Email & collaboration** select **Policies & rules**.
-3. On the Policies & rules page select **Threat policies**.
-4. Under polices select **Anti-malware** and click on the **Default (Default)** policy.
-5. On the Policy page that appears on the right hand pane scroll to the bottom and click on **Edit protection settings**, check the **Enable the common attachments filter**.
-6. If any of the default file types are missing, click **Select file types** and add the missing file types in.
-7. Click Save.
-
-## Related Links
-
-* [Microsoft 365 Defender](https://security.microsoft.com)
-* [Get-MalwareFilterPolicy](https://learn.microsoft.com/powershell/module/exchangepowershell/get-malwarefilterpolicy?view=exchange-ps)
-* [Configure anti-malware policies for cloud mailboxes](https://learn.microsoft.com/defender-office-365/anti-malware-policies-configure?view=o365-worldwide)
-* [CIS Microsoft 365 Foundations Benchmark v7.0.0 - Page 84](https://www.cisecurity.org/benchmark/microsoft_365)
 
 ## Source
 

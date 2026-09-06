@@ -83,26 +83,6 @@ $MBX | ForEach-Object { Update-MgUser -UserId $_.ExternalDirectoryObjectId -Acco
 | PowerShell test | [Test-MtCisSharedMailboxSignIn](/docs/commands/Test-MtCisSharedMailboxSignIn) |
 | Tags | CIS, CIS E3, CIS E3 Level 1, CIS M365 v7.0.0, CIS.M365.1.2.2, L1 |
 
-## Remediation
-
-Block sign-in to shared mailboxes in the UI:
-
-1. Navigate to Microsoft 365 admin center [https://admin.microsoft.com](https://admin.microsoft.com).
-2. Click to expand **Teams & groups** and select **Shared mailboxes**.
-3. Take note of all shared mailboxes.
-4. Click to expand **Users** and select **Active users**.
-5. Select a shared mailbox account to open its properties pane and then select **Block sign-in**.
-6. Check the box for **Block this user from signing in.**
-7. Repeat for any additional shared mailboxes.
-
-## Related Links
-
-* [Microsoft 365 Admin Center](https://admin.microsoft.com)
-* [About shared mailboxes in Microsoft 365](https://learn.microsoft.com/microsoft-365/admin/email/about-shared-mailboxes?view=o365-worldwide)
-* [Create a shared mailbox](https://learn.microsoft.com/microsoft-365/admin/email/create-a-shared-mailbox?view=o365-worldwide#block-sign-in-for-the-shared-mailbox-account)
-* [Block Microsoft 365 user accounts with PowerShell](https://learn.microsoft.com/microsoft-365/enterprise/block-user-accounts-with-microsoft-365-powershell?view=o365-worldwide#block-individual-user-accounts)
-* [CIS Microsoft 365 Foundations Benchmark v7.0.0 - Page 42](https://www.cisecurity.org/benchmark/microsoft_365)
-
 ## Source
 
 - Pester test: `tests/cis/Test-MtCisSharedMailboxSignIn.Tests.ps1`

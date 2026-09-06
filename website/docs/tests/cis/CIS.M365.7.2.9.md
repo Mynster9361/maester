@@ -82,12 +82,6 @@ Set-SPOTenant -ExternalUserExpireInDays 30 -ExternalUserExpirationRequired $True
 | PowerShell test | [Test-MtCisSpoGuestAccessExpiry](/docs/commands/Test-MtCisSpoGuestAccessExpiry) |
 | Tags | CIS, CIS E3, CIS E3 Level 1, CIS E5, CIS E5 Level 1, CIS M365 v7.0.0, CIS.M365.7.2.9, L1, OneDrive, SharePoint Online |
 
-## Related Links
-
-* [Manage sharing settings for SharePoint and OneDrive in Microsoft 365](https://learn.microsoft.com/sharepoint/turn-external-sharing-on-or-off#change-the-organization-level-external-sharing-setting)
-* [Managing SharePoint Online Security: A Team Effort](https://learn.microsoft.com/microsoft-365/community/sharepoint-security-a-team-effort)
-* [CIS Microsoft 365 Foundations Benchmark v7.0.0 - Page 487](https://www.cisecurity.org/benchmark/microsoft_365)
-
 ## Source
 
 - Pester test: `tests/cis/Test-MtCisSpoGuestAccessExpiry.Tests.ps1`

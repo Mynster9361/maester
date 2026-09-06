@@ -77,17 +77,6 @@ Update-MgServicePrincipal -ServicePrincipalId $SP.Id -AccountEnabled:$false
 | PowerShell test | [Test-MtCisThirdPartyStorageServicesRestricted](/docs/commands/Test-MtCisThirdPartyStorageServicesRestricted) |
 | Tags | CIS, CIS E3, CIS E3 Level 2, CIS E5, CIS E5 Level 2, CIS M365 v7.0.0, CIS.M365.1.3.7, L2, Security |
 
-## Remediation
-
-1. Navigate to [Microsoft 365 admin center](https://admin.microsoft.com)
-2. Go to **Settings** > **Org Settings** > **Services** > **Microsoft 365 on the web**
-3. Uncheck **Let users open files stored in third-party storage services in Microsoft 365 on the web**
-
-## Related Links
-
-* [Microsoft 365 admin center](https://admin.microsoft.com)
-* [CIS Microsoft 365 Foundations Benchmark v7.0.0 - Page 67](https://www.cisecurity.org/benchmark/microsoft_365)
-
 ## Source
 
 - Pester test: `tests/cis/Test-MtCisThirdPartyStorageServicesRestricted.Tests.ps1`

@@ -61,9 +61,9 @@ These tests verify tenant and organization configuration against CIS Benchmark r
 | [CIS.M365.7.2.9](./CIS.M365.7.2.9.md) | Ensure guest access to a site or OneDrive will expire automatically | Unknown | SharePoint Online |
 | [CIS.M365.7.2.11](./CIS.M365.7.2.11.md) | Ensure the SharePoint default sharing link permission is set | Unknown | SharePoint Online |
 | [CIS.M365.7.3.1](./CIS.M365.7.3.1.md) | Ensure Office 365 SharePoint infected files are disallowed for download | Unknown | SharePoint Online |
-| [CIS.M365.8.1.1](./CIS.M365.8.1.1.md) | (L2) Ensure external file sharing in Teams is enabled for only approved cloud storage services | Medium | CIS M365 v7.0.0 |
-| [CIS.M365.8.2.2](./CIS.M365.8.2.2.md) | (L1) Ensure communication with unmanaged Teams users is disabled | Medium | CIS M365 v7.0.0 |
-| [CIS.M365.8.2.3](./CIS.M365.8.2.3.md) | Ensure external Teams users cannot initiate conversations | Unknown | CIS M365 v7.0.0 |
-| [CIS.M365.8.4.1](./CIS.M365.8.4.1.md) | (L1) Ensure app permission policies are configured | High | CIS M365 v7.0.0 |
+| [CIS.M365.8.1.1](./CIS.M365.8.1.1.md) | (L2) Ensure external file sharing in Teams is enabled for only approved cloud storage services | Medium | CIS E3 Level 2 |
+| [CIS.M365.8.2.2](./CIS.M365.8.2.2.md) | (L1) Ensure communication with unmanaged Teams users is disabled | Medium | CIS E3 Level 1 |
+| [CIS.M365.8.2.3](./CIS.M365.8.2.3.md) | Ensure external Teams users cannot initiate conversations | Unknown | CIS E3 Level 1 |
+| [CIS.M365.8.4.1](./CIS.M365.8.4.1.md) | (L1) Ensure app permission policies are configured | High | CIS E3 Level 1 |
 | [CIS.M365.8.5.3](./CIS.M365.8.5.3.md) | (L1) Ensure only people in my org can bypass the lobby | Medium | CIS E3 Level 1 |
 | [CIS.M365.8.6.1](./CIS.M365.8.6.1.md) | (L1) Ensure users can report security concerns in Teams | Medium | CIS E5 Level 1 |

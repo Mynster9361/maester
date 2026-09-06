@@ -70,12 +70,6 @@ Set-SPOTenant -DisallowInfectedFileDownload $true
 | PowerShell test | [Test-MtCisSpoPreventDownloadMaliciousFile](/docs/commands/Test-MtCisSpoPreventDownloadMaliciousFile) |
 | Tags | CIS, CIS E5, CIS E5 Level 2, CIS M365 v7.0.0, CIS.M365.7.3.1, L2, SharePoint Online |
 
-## Related Links
-
-* [Manage sharing settings for SharePoint and OneDrive in Microsoft 365](https://learn.microsoft.com/sharepoint/turn-external-sharing-on-or-off#change-the-organization-level-external-sharing-setting)
-* [Overview of external sharing in SharePoint and OneDrive in Microsoft 365](https://learn.microsoft.com/sharepoint/external-sharing-overview)
-* [CIS Microsoft 365 Foundations Benchmark v7.0.0 - Page 496](https://www.cisecurity.org/benchmark/microsoft_365)
-
 ## Source
 
 - Pester test: `tests/cis/Test-MtCisSpoPreventDownloadMaliciousFile.Tests.ps1`

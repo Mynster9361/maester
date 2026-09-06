@@ -85,19 +85,6 @@ Invoke-MgGraphRequest -Uri $Uri -Method PATCH -Body $Body
 | PowerShell test | [Test-MtCisDevicesWithoutCompliancePolicyMarked](/docs/commands/Test-MtCisDevicesWithoutCompliancePolicyMarked) |
 | Tags | CIS, CIS E3, CIS E3 Level 1, CIS E5, CIS E5 Level 1, CIS M365 v7.0.0, CIS.M365.4.1, L1, Security |
 
-## Remediation
-
-1. Navigate to [Microsoft Intune admin center](https://intune.microsoft.com).
-2. Click on **Devices** and then under **Managed devices** on **Compliance**.
-3. Click **Compliance settings**.
-4. Ensure **Mark devices with no compliance policy assigned as** set to **Not compliant**
-
-## Related Links
-
-* [Microsoft Intune admin center](https://intune.microsoft.com)
-* [Use compliance policies to set rules for devices you manage with Intune](https://learn.microsoft.com/intune/intune-service/protect/device-compliance-get-started)
-* [CIS Microsoft 365 Foundations Benchmark v7.0.0 - Page 184](https://www.cisecurity.org/benchmark/microsoft_365)
-
 ## Source
 
 - Pester test: `tests/cis/Test-MtCisDevicesWithoutCompliancePolicyMarked.Tests.ps1`
